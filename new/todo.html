@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo_style.css">
+</head>
+<body>
+    
+    <div class="conatiner">
+        <div class="todo_app">
+
+            <!-- header section  -->
+            <header class="todo_header">
+                <h1>MP Todo List</h1>
+                <p class="subtitle">Stay organized and productive</p>
+            </header>
+
+            <!-- input section -->
+             <div class="todo_input_container">
+                <input type="text" id="todoInput" class="todo_input" placeholder="Add a new task ..."
+                autocomplete="off">
+
+                <button id="add-Todo-btn" class="add_btn">Add</button>
+                
+             </div>
+
+             <!-- Filter Container -->
+             <div class="filter-container">
+                <button id="All_todo" class="filter-btn active">All</button>
+                <button id="active_todo" class="filter-btn">Active</button>
+                <button id="completed_todo" class="filter-btn">Completed</button>
+             </div>
+
+             <ul class="todo-list" id="TodoList">
+                <!-- <li class="todo-item">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text">Complete Project Section</span>
+                    <button class="delete-btn">x</button>
+                </li>
+                <li class="todo-item completed">
+                    <input type="checkbox" class="todo-checkbox" checked>
+                    <span class="todo-text">Review All Question</span>
+                    <button class="delete-btn">x</button>
+                </li>
+                <li class="todo-item">
+                    <input type="checkbox" class="todo-checkbox">
+                    <span class="todo-text">Update Team progress</span>
+                    <button class="delete-btn">x</button>
+                </li> -->
+             </ul>
+
+             <div class="todo-footer">
+                <span id="ItemLeft" class="item-left"><span id="item_left"></span> items</span>
+                <button class="clear-completed" id="ClearCompleteBtn">
+                    Clear Completed
+                </button>
+             </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
